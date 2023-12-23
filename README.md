@@ -34,6 +34,7 @@ To get started with the project, follow these steps:
 1. Clone the Repository
 2. pip install streamlit watchdog pytube
 3. streamlit run app.py
+4. To run in detach mode 'nohup streamlit run app.py &'
 
 
 ## License
