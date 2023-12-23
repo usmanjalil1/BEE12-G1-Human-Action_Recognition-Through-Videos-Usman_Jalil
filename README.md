@@ -31,15 +31,10 @@ Our approach involves the use of Convolutional LSTMs, which are well-suited for 
 
 ## Getting Started
 To get started with the project, follow these steps:
-1. Clone the repository
-2. Navigate to the project directory: `cd human-action-recognition`
-3. Install dependencies: `pip install -r requirements.txt`
-4. Run the main script: `python main.py`
-
-## Usage
 1. Clone the Repository
 2. pip install streamlit watchdog pytube
 3. streamlit run app.py
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
