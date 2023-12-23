@@ -1,0 +1,290 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://172.16.0.2:8501
+
+2023-12-23 14:40:18.628 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/app.py", line 2, in <module>
+    from Utils.YouTube import *
+ModuleNotFoundError: No module named 'Utils.YouTube'
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8502
+  Network URL: http://172.16.0.2:8502
+
+2023-12-23 14:41:16.563 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/app.py", line 2, in <module>
+    from Utils.YouTube import *
+ModuleNotFoundError: No module named 'Utils.YouTube'
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8503
+  Network URL: http://172.16.0.2:8503
+
+2023-12-23 14:49:30.633 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/app.py", line 10, in <module>
+    os.makedirs(test_videos_directory, exist_ok = True)
+NameError: name 'os' is not defined
+2023-12-23 14:50:03.937 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/app.py", line 12, in <module>
+    video_title = download_youtube_videos(video_url, test_videos_directory)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/Utils/Youtube.py", line 43, in download_youtube_videos
+    video = pafy.new(youtube_video_url)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/pafy.py", line 124, in new
+    return Pafy(url, basic, gdata, size, callback, ydl_opts=ydl_opts)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/backend_youtube_dl.py", line 30, in __init__
+    super(YtdlPafy, self).__init__(*args, **kwargs)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/backend_shared.py", line 62, in __init__
+    self.videoid = extract_video_id(video_url)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/backend_shared.py", line 51, in extract_video_id
+    raise ValueError(err % url)
+ValueError: Need 11 character video id or the URL of the video. Got https://www.youtube.com/shorts/FRgEyIHOZ5Y
+ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+2023-12-23 14:51:16.698 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/YoutubeDL.py", line 815, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/YoutubeDL.py", line 836, in __extract_info
+    ie_result = ie.extract(url)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/extractor/common.py", line 534, in extract
+    ie_result = self._real_extract(url)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/extractor/youtube.py", line 1794, in _real_extract
+    'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/extractor/common.py", line 1012, in _search_regex
+    raise RegexNotFoundError('Unable to extract %s' % _name)
+youtube_dl.utils.RegexNotFoundError: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/backend_youtube_dl.py", line 39, in _fetch_basic
+    self._ydl_info = ydl.extract_info(self.videoid, download=False)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/YoutubeDL.py", line 808, in extract_info
+    return self.__extract_info(url, ie, download, extra_info, process)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/YoutubeDL.py", line 824, in wrapper
+    self.report_error(compat_str(e), e.format_traceback())
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/YoutubeDL.py", line 628, in report_error
+    self.trouble(error_message, tb)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/YoutubeDL.py", line 598, in trouble
+    raise DownloadError(message, exc_info)
+youtube_dl.utils.DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/app.py", line 12, in <module>
+    video_title = download_youtube_videos(video_url, test_videos_directory)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/Utils/Youtube.py", line 43, in download_youtube_videos
+    video = pafy.new(youtube_video_url)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/pafy.py", line 124, in new
+    return Pafy(url, basic, gdata, size, callback, ydl_opts=ydl_opts)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/backend_youtube_dl.py", line 30, in __init__
+    super(YtdlPafy, self).__init__(*args, **kwargs)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/backend_shared.py", line 97, in __init__
+    self._fetch_basic()
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/backend_youtube_dl.py", line 42, in _fetch_basic
+    raise IOError(str(e).replace('YouTube said', 'Youtube says'))
+OSError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+2023-12-23 14:54:23.665 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/YoutubeDL.py", line 815, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/YoutubeDL.py", line 836, in __extract_info
+    ie_result = ie.extract(url)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/extractor/common.py", line 534, in extract
+    ie_result = self._real_extract(url)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/extractor/youtube.py", line 1794, in _real_extract
+    'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/extractor/common.py", line 1012, in _search_regex
+    raise RegexNotFoundError('Unable to extract %s' % _name)
+youtube_dl.utils.RegexNotFoundError: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/backend_youtube_dl.py", line 39, in _fetch_basic
+    self._ydl_info = ydl.extract_info(self.videoid, download=False)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/YoutubeDL.py", line 808, in extract_info
+    return self.__extract_info(url, ie, download, extra_info, process)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/YoutubeDL.py", line 824, in wrapper
+    self.report_error(compat_str(e), e.format_traceback())
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/YoutubeDL.py", line 628, in report_error
+    self.trouble(error_message, tb)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/youtube_dl/YoutubeDL.py", line 598, in trouble
+    raise DownloadError(message, exc_info)
+youtube_dl.utils.DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/app.py", line 12, in <module>
+    video_title = download_youtube_videos(video_url, test_videos_directory)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/Utils/Youtube.py", line 43, in download_youtube_videos
+    video = pafy.new(youtube_video_url)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/pafy.py", line 124, in new
+    return Pafy(url, basic, gdata, size, callback, ydl_opts=ydl_opts)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/backend_youtube_dl.py", line 30, in __init__
+    super(YtdlPafy, self).__init__(*args, **kwargs)
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/backend_shared.py", line 97, in __init__
+    self._fetch_basic()
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/pafy/backend_youtube_dl.py", line 42, in _fetch_basic
+    raise IOError(str(e).replace('YouTube said', 'Youtube says'))
+OSError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8504
+  Network URL: http://172.16.0.2:8504
+
+2023-12-23 15:00:00.776 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/app.py", line 2, in <module>
+    from Utils.Youtube import download_youtube_videos
+ImportError: cannot import name 'download_youtube_videos' from 'Utils.Youtube' (/Users/mac/Desktop/CV_Project/Action_Recognition_App/Utils/Youtube.py)
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8505
+  Network URL: http://172.16.0.2:8505
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8506
+  Network URL: http://172.16.0.2:8506
+
+  Stopping...
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8503
+  Network URL: http://172.16.0.2:8503
+
+Action_Recognition_App/youtube_videos/None.mp4
+  Stopping...
+Action_Recognition_App/youtube_videos/Comparison of Four Styles of Tai Chi.mp4
+  Stopping...
+Action_Recognition_App/youtube_videos/Test Video.mp4
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8503
+  Network URL: http://172.16.0.2:8503
+
+2023-12-23 15:20:46.272306: I metal_plugin/src/device/metal_device.cc:1154] Metal device set to: Apple M1
+2023-12-23 15:20:46.273125: I metal_plugin/src/device/metal_device.cc:296] systemMemory: 8.00 GB
+2023-12-23 15:20:46.273150: I metal_plugin/src/device/metal_device.cc:313] maxCacheSize: 2.67 GB
+2023-12-23 15:20:46.273225: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:306] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
+2023-12-23 15:20:46.273274: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:272] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -> physical PluggableDevice (device: 0, name: METAL, pci bus id: <undefined>)
+2023-12-23 15:20:47.300052: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:117] Plugin optimizer for device_type GPU is enabled.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 3s 3s/step
+Action Predicted: Biking
+Confidence: 0.7829945087432861
+Action_Recognition_App/youtube_videos/Test Video.mp4
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 805ms/step
+Action Predicted: Biking
+Confidence: 0.7829945087432861
+Action_Recognition_App/youtube_videos/Test Video.mp4
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 801ms/step
+Action Predicted: Biking
+Confidence: 0.7829945087432861
+Action_Recognition_App/youtube_videos/Test Video.mp4
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 791ms/step
+2023-12-23 15:29:42.067 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/app.py", line 2, in <module>
+    from Utils.Youtube import download_video, predict_single_action
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/Utils/Youtube.py", line 89
+    st.text("Prediction Result:")
+IndentationError: unexpected indent
+2023-12-23 15:29:51.433 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/app.py", line 2, in <module>
+    from Utils.Youtube import download_video, predict_single_action
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/Utils/Youtube.py", line 89
+    st.text("Prediction Result:")
+IndentationError: unexpected indent
+2023-12-23 15:29:58.054 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/app.py", line 2, in <module>
+    from Utils.Youtube import download_video, predict_single_action
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/Utils/Youtube.py", line 89
+    st.text("Prediction Result:")
+IndentationError: unexpected indent
+2023-12-23 15:30:02.450 Uncaught app exception
+Traceback (most recent call last):
+  File "/Users/mac/anaconda3/envs/tf/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/app.py", line 2, in <module>
+    from Utils.Youtube import download_video, predict_single_action
+  File "/Users/mac/Desktop/CV_Project/Action_Recognition_App/Utils/Youtube.py", line 89
+    st.text("Prediction Result:")
+IndentationError: unexpected indent
+Action Predicted: Biking
+Confidence: 0.7829945087432861
+Action_Recognition_App/youtube_videos/Test Video.mp4
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8503
+  Network URL: http://172.16.0.2:8503
+
+2023-12-23 15:30:56.229311: I metal_plugin/src/device/metal_device.cc:1154] Metal device set to: Apple M1
+2023-12-23 15:30:56.229485: I metal_plugin/src/device/metal_device.cc:296] systemMemory: 8.00 GB
+2023-12-23 15:30:56.229500: I metal_plugin/src/device/metal_device.cc:313] maxCacheSize: 2.67 GB
+2023-12-23 15:30:56.229536: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:306] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
+2023-12-23 15:30:56.229557: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:272] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -> physical PluggableDevice (device: 0, name: METAL, pci bus id: <undefined>)
+2023-12-23 15:30:56.990946: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:117] Plugin optimizer for device_type GPU is enabled.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 868ms/step
+Action Predicted: Biking
+Confidence: 0.7829945087432861
+Action_Recognition_App/youtube_videos/Test Video.mp4
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 782ms/step
+Action Predicted: Biking
+Confidence: 0.7829945087432861
+Action_Recognition_App/youtube_videos/Test Video.mp4
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 786ms/step
+Action Predicted: Biking
+Confidence: 0.7829945087432861
+Action_Recognition_App/youtube_videos/Test Video.mp4
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 803ms/step
+WARNING:tensorflow:5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x17127c790> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+Action Predicted: Biking
+Confidence: 0.7829945087432861
+Action_Recognition_App/youtube_videos/Test Video.mp4
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 808ms/step
+WARNING:tensorflow:6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x17127c8b0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+Action Predicted: Biking
+Confidence: 0.7829945087432861
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 807ms/step
