@@ -37,7 +37,9 @@ To get started with the project, follow these steps:
 4. Run the main script: `python main.py`
 
 ## Usage
-After setting up the project, you can use the trained model to recognize human actions in videos. Adjust the input parameters and paths as needed in the `main.py` script.
+1. Clone the Repository
+2. pip install streamlit watchdog pytube
+3. streamlit run app.py
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
