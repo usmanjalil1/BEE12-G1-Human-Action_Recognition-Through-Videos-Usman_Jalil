@@ -4,7 +4,7 @@
 ## Group Members
 - **Usman Jalil**
   - **Registration Number:** 346172
-- **Ali Subham**
+- **Ali Subhan**
   - **Registration Number:** 337505
 - **Muhammad Abdullah**
   - **Registration Number:** 334656
